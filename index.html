@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani Arora - Certified Dietitian & Health Coach</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6;
+        }
+        .gradient-bg { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+        }
+        .shadow-soft { 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+        }
+        .shadow-hover { 
+            transition: all 0.3s ease; 
+        }
+        .shadow-hover:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12); 
+        }
+        .pattern-dots {
+            background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .price-highlight {
+            background: linear-gradient(135deg, #f3f4f6 0%, #f9fafb 100%);
+            border: 2px solid #e5e7eb;
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .mobile-padding { padding: 1rem; }
+            .mobile-text-sm { font-size: 0.875rem; }
+            .mobile-text-xs { font-size: 0.75rem; }
+            .mobile-mb-4 { margin-bottom: 1rem; }
+            .mobile-gap-4 { gap: 1rem; }
+        }
+        
+        /* Touch-friendly buttons */
+        .btn-touch {
+            min-height: 44px;
+            padding: 12px 24px;
+            font-size: 16px;
+        }
+        
+        /* Program cards responsive */
+        .program-card {
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .program-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .program-footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-8 md:py-12">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-5xl font-bold mb-3">Shivani Arora</h1>
+                <div class="w-16 h-1 bg-yellow-400 mx-auto mb-4 rounded-full"></div>
+                <h2 class="text-lg md:text-2xl font-medium mb-4">Certified Dietitian & Health Coach</h2>
+                <p class="text-base md:text-xl mb-6 opacity-90">Transform Your Health with Personalized Nutrition</p>
+                
+                <!-- Contact Info - Mobile Optimized -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm">
+                    <a href="tel:+918810646986" class="flex items-center hover:text-yellow-300 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>
+                        <span>+91-8810646986</span>
+                    </a>
+                    <a href="mailto:shivaniarora885@gmail.com" class="flex items-center hover:text-yellow-300 transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span class="truncate">shivaniarora885@gmail.com</span>
+                    </a>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Gurgaon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6 md:py-8 space-y-8">
+        <!-- About Me Section -->
+        <section class="bg-white rounded-xl shadow-soft p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-3"></i>
+                <span>About Me</span>
+            </h3>
+            
+            <!-- Achievement Badges -->
+            <div class="flex flex-wrap gap-3 mb-6">
+                <span class="bg-purple-100 text-purple-800 px-3 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-graduation-cap mr-1"></i> Post Graduate
+                </span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-clock mr-1"></i> 4+ Years Experience
+                </span>
+                <span class="bg-green-100 text-green-800 px-3 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-users mr-1"></i> 2000+ Lives Transformed
+                </span>
+            </div>
+            
+            <p class="text-gray-600 leading-relaxed">
+                Certified dietitian with extensive experience at BLK Super Specialty Hospital and premium wellness programs. 
+                I combine clinical expertise with practical lifestyle solutions for sustainable health transformation.
+            </p>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="bg-white rounded-xl shadow-soft p-6 md:p-8">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">Choose Your Health Journey</h3>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-500 mx-auto mb-4 rounded-full"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Transform your life with personalized nutrition plans designed to fit your lifestyle and health goals.
+                </p>
+            </div>
+            
+            <!-- Programs Grid - Mobile First -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Single Consultations -->
+                <div class="program-card bg-white border border-gray-200 rounded-xl p-6 shadow-hover">
+                    <div class="program-content">
+                        <div class="text-center mb-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Single Consultations</h4>
+                            <p class="text-gray-600 text-sm">Flexible One-Time Sessions</p>
+                        </div>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="price-highlight rounded-lg p-4 text-center">
+                                <p class="text-sm text-gray-700 font-medium mb-1">Initial Consultation</p>
+                                <p class="text-xs text-gray-500 mb-2">(30 minutes)</p>
+                                <p class="text-xl font-bold text-gray-800">₹2,000</p>
+                            </div>
+                            
+                            <div class="price-highlight rounded-lg p-4 text-center">
+                                <p class="text-sm text-gray-700 font-medium mb-1">Follow-up</p>
+                                <p class="text-xs text-gray-500 mb-2">(15 minutes)</p>
+                                <p class="text-xl font-bold text-gray-800">₹1,000</p>
+                            </div>
+                            
+                            <div class="price-highlight rounded-lg p-4 text-center">
+                                <p class="text-sm text-gray-700 font-medium mb-1">Diet Plan Only</p>
+                                <p class="text-xs text-gray-500 mb-2">(Comprehensive plan)</p>
+                                <p class="text-xl font-bold text-gray-800">₹3,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="program-footer">
+                        <div class="bg-gray-50 rounded-lg p-3 text-center">
+                            <p class="text-xs text-gray-600">✓ No Commitment ✓ Try First</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Start Program -->
+                <div class="program-card bg-white border border-gray-200 rounded-xl p-6 shadow-hover">
+                    <div class="program-content">
+                        <div class="text-center mb-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Quick Start Program</h4>
+                            <p class="text-gray-600 text-sm">6 Week Fast Track</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 rounded-lg p-4 mb-6 text-center border border-blue-200">
+                            <p class="text-2xl font-bold text-gray-800">₹8,000</p>
+                            <p class="text-gray-600 text-sm">6 Week Program</p>
+                        </div>
+                        
+                        <ul class="space-y-3 mb-6 text-sm">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">3 consultations + meal plan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">WhatsApp support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Weekly progress reviews</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Basic recipe guide</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="program-footer">
+                        <div class="bg-blue-50 rounded-lg p-3 text-center border border-blue-200">
+                            <p class="text-xs text-blue-700">✓ Quick Results ✓ Events</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Nutrition Therapy -->
+                <div class="program-card bg-white border border-gray-200 rounded-xl p-6 shadow-hover">
+                    <div class="program-content">
+                        <div class="text-center mb-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Medical Nutrition</h4>
+                            <p class="text-gray-600 text-sm">Specialized Health Management</p>
+                        </div>
+                        
+                        <div class="bg-purple-50 rounded-lg p-4 mb-6 text-center border border-purple-200">
+                            <p class="text-2xl font-bold text-gray-800">₹12,000</p>
+                            <p class="text-gray-600 text-sm">3 Month Program</p>
+                        </div>
+                        
+                        <ul class="space-y-3 mb-6 text-sm">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Medical history review</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Condition-specific plans</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">3 monthly consultations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Family guidance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="program-footer">
+                        <div class="bg-purple-50 rounded-lg p-3 text-center border border-purple-200">
+                            <p class="text-xs text-purple-700">✓ Diabetes ✓ Hypertension</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complete Transformation -->
+                <div class="program-card bg-white border-2 border-yellow-400 rounded-xl p-6 shadow-hover relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black px-4 py-1 rounded-full text-xs font-bold">
+                        COMPREHENSIVE
+                    </div>
+                    
+                    <div class="program-content">
+                        <div class="text-center mb-6 mt-2">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Complete Transformation</h4>
+                            <p class="text-gray-600 text-sm">90-Day Journey</p>
+                        </div>
+                        
+                        <div class="bg-yellow-50 rounded-lg p-4 mb-6 text-center border border-yellow-200">
+                            <p class="text-2xl font-bold text-gray-800">₹15,000</p>
+                            <p class="text-gray-600 text-sm">3 Month Program</p>
+                        </div>
+                        
+                        <ul class="space-y-3 mb-6 text-sm">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">12 weekly consultations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Bi-weekly meal updates</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">24/7 WhatsApp support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Progress monitoring</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                                <span class="text-gray-700">Recipe collection</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="program-footer">
+                        <div class="bg-green-50 rounded-lg p-3 text-center border border-green-200">
+                            <p class="text-xs text-green-700">✓ Weight ✓ PCOS ✓ Thyroid</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile-Optimized CTA -->
+            <div class="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-3">Ready to Start Your Health Transformation?</h4>
+                <p class="text-gray-700 mb-6">All programs can be booked directly</p>
+                
+                <!-- Stacked buttons on mobile -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:+918810646986" class="btn-touch bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i>Call: 8810646986
+                    </a>
+                    <a href="https://wa.me/918810646986" class="btn-touch bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300 inline-flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Me Section -->
+        <section class="bg-white rounded-xl shadow-soft p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-trophy text-yellow-500 mr-3"></i>
+                <span>Why Choose Me?</span>
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
+                    <i class="fas fa-bullseye text-green-500 text-lg mt-1 flex-shrink-0"></i>
+                    <div>
+                        <span class="text-gray-700 font-medium block">85% Success Rate</span>
+                        <p class="text-sm text-gray-600">in achieving health goals</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-3 p-4 bg-red-50 rounded-lg">
+                    <i class="fas fa-hospital text-red-500 text-lg mt-1 flex-shrink-0"></i>
+                    <div>
+                        <span class="text-gray-700 font-medium block">Hospital-Trained</span>
+                        <p class="text-sm text-gray-600">2000+ patient experience</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
+                    <i class="fab fa-whatsapp text-green-500 text-lg mt-1 flex-shrink-0"></i>
+                    <div>
+                        <span class="text-gray-700 font-medium block">WhatsApp Support</span>
+                        <p class="text-sm text-gray-600">Stay connected always</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
+                    <i class="fas fa-utensils text-orange-500 text-lg mt-1 flex-shrink-0"></i>
+                    <div>
+                        <span class="text-gray-700 font-medium block">Personalized Plans</span>
+                        <p class="text-sm text-gray-600">No generic diets</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg md:col-span-2 lg:col-span-2">
+                    <i class="fas fa-globe text-blue-500 text-lg mt-1 flex-shrink-0"></i>
+                    <div>
+                        <span class="text-gray-700 font-medium block">Flexible Consultations</span>
+                        <p class="text-sm text-gray-600">In-person & virtual sessions available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl shadow-soft p-6 md:p-8 relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-200 rounded-full opacity-20 -mr-16 -mt-16"></div>
+            <div class="absolute bottom-0 left-0 w-24 h-24 bg-pink-200 rounded-full opacity-20 -ml-12 -mb-12"></div>
+            
+            <div class="relative z-10">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-trophy text-yellow-500 mr-3"></i>
+                        Real Transformation Stories
+                    </h3>
+                    <div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mb-4 rounded-full"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Discover how my clients achieved remarkable health transformations</p>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Sudhir's Success Story -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6">
+                            <!-- Client Info & Stars -->
+                            <div class="text-center md:text-left">
+                                <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto md:mx-0 mb-3 shadow-lg">
+                                    <span class="text-white font-bold text-2xl">S</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-800 mb-1">Sudhir</h4>
+                                <p class="text-sm text-gray-600 mb-2">Age 56 • 3 Year Diabetic</p>
+                                <div class="flex justify-center md:justify-start items-center gap-1 mb-4">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <p class="text-xs text-gray-500 mb-1">Conditions managed:</p>
+                                    <p class="text-sm font-medium text-gray-700">BP, High Cholesterol</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Results & Testimonial -->
+                            <div class="flex-1">
+                                <!-- Key Results -->
+                                <div class="grid grid-cols-3 gap-2 mb-6">
+                                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-2 text-center border border-green-200">
+                                        <p class="text-lg font-bold text-green-600 mb-1">12.5kg</p>
+                                        <p class="text-xs text-gray-600">Weight Lost</p>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-2 text-center border border-blue-200">
+                                        <p class="text-lg font-bold text-blue-600 mb-1">7.7→5.9</p>
+                                        <p class="text-xs text-gray-600">HbA1c</p>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-2 text-center border border-purple-200">
+                                        <p class="text-lg font-bold text-purple-600 mb-1">Zero</p>
+                                        <p class="text-xs text-gray-600">Medicines</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Testimonial -->
+                                <div class="bg-gray-50 rounded-xl p-4 border-l-4 border-green-400">
+                                    <i class="fas fa-quote-left text-green-400 text-lg mb-2"></i>
+                                    <p class="text-gray-700 italic leading-relaxed">"My HbA1c was 7.7 in 3 months it has reduced to 5.9 and I don't take any medicine. My weight also reduced from 124.5 to 112 kgs. Thanks to my coach Shivani Arora for her support and guidance."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Soni Kumari's Success Story -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6">
+                            <!-- Client Info & Stars -->
+                            <div class="text-center md:text-left">
+                                <div class="w-20 h-20 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mx-auto md:mx-0 mb-3 shadow-lg">
+                                    <span class="text-white font-bold text-lg">SK</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-800 mb-1">Soni Kumari</h4>
+                                <p class="text-sm text-gray-600 mb-2">Age 57 • 10 Years Diabetes</p>
+                                <div class="flex justify-center md:justify-start items-center gap-1 mb-4">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <p class="text-xs text-gray-500 mb-1">Conditions managed:</p>
+                                    <p class="text-sm font-medium text-gray-700">Thyroid, High Cholesterol</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Results & Testimonial -->
+                            <div class="flex-1">
+                                <!-- Key Results -->
+                                <div class="grid grid-cols-3 gap-2 mb-6">
+                                    <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-2 text-center border border-red-200">
+                                        <p class="text-lg font-bold text-red-600 mb-1">30→0</p>
+                                        <p class="text-xs text-gray-600">Insulin</p>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-2 text-center border border-blue-200">
+                                        <p class="text-lg font-bold text-blue-600 mb-1">9.7→7.3</p>
+                                        <p class="text-xs text-gray-600">HbA1c</p>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-2 text-center border border-purple-200">
+                                        <p class="text-lg font-bold text-purple-600 mb-1">1 Month</p>
+                                        <p class="text-xs text-gray-600">Insulin Free</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Testimonial -->
+                                <div class="bg-gray-50 rounded-xl p-4 border-l-4 border-pink-400">
+                                    <i class="fas fa-quote-left text-pink-400 text-lg mb-2"></i>
+                                    <p class="text-gray-700 italic leading-relaxed">"मैं पिछले 10 सालों से डायबिटीज से जूझ रही हूं। पिछले 2 सालों से मैं इंसुलिन ले रही थी - 30 यूनिट। लेकिन जब से 4 महीने पहले ट्रीटमेंट शुरू किया, मेरी इंसुलिन 1 महीने के अंदर बंद हो गई है। मेरा HbA1c पहले 9.7 था जो घटकर 7.3 हो गया है। यह सब मेरी कोच शिवानी अरोड़ा की गाइडेंस से हुआ है। मैं उन्हें धन्यवाद देती हूं।"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="mt-10 text-center bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="mb-6">
+                        <i class="fas fa-trophy text-yellow-500 text-3xl mb-3"></i>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Ready for Your Success Story?</h4>
+                        <p class="text-gray-600">Join hundreds of clients who've transformed their health with personalized nutrition guidance</p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="tel:+918810646986" class="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center shadow-lg">
+                            <i class="fas fa-phone mr-2"></i>Book Consultation (₹2,000)
+                        </a>
+                        <a href="https://wa.me/918810646986" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center shadow-lg">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specializations Section -->
+        <section class="bg-white rounded-xl shadow-soft p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-user-md text-purple-500 mr-3"></i>
+                <span>Specializations</span>
+            </h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <i class="fas fa-check-circle text-green-500 flex-shrink-0"></i>
+                    <span class="text-gray-700">Weight Management</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <i class="fas fa-check-circle text-green-500 flex-shrink-0"></i>
+                    <span class="text-gray-700">Diabetes & PCOS</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <i class="fas fa-check-circle text-green-500 flex-shrink-0"></i>
+                    <span class="text-gray-700">Thyroid Disorders</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <i class="fas fa-check-circle text-green-500 flex-shrink-0"></i>
+                    <span class="text-gray-700">Gut Health</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg sm:col-span-2 lg:col-span-2">
+                    <i class="fas fa-check-circle text-green-500 flex-shrink-0"></i>
+                    <span class="text-gray-700">Family Meal Planning</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Section -->
+        <section class="bg-white rounded-xl shadow-soft p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-calendar-check text-indigo-500 mr-3"></i>
+                <span>Book Your Consultation</span>
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Available Options:</h4>
+                    <ul class="space-y-3 text-gray-700 mb-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-video text-indigo-500 mr-3 flex-shrink-0"></i>
+                            <span>Virtual consultations across the globe</span>
+                        </li>
+                    </ul>
+                    <a href="https://calendly.com/shivaniarora885/30min" target="_blank" rel="noopener noreferrer" class="inline-block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                        <i class="fas fa-calendar-alt mr-2"></i>Book Online Consultation
+                    </a>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Working Hours:</h4>
+                    <div class="space-y-2 text-gray-700 mb-4">
+                        <p><strong>Mon-Fri:</strong> 9AM - 7PM IST</p>
+                        <p><strong>Saturday:</strong> 9AM - 5PM IST</p>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
+                        <p class="font-bold text-indigo-800">Easy Booking:</p>
+                        <p class="text-indigo-700">Call/WhatsApp +91-8810646986</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Section -->
+        <section class="bg-white rounded-xl shadow-soft p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-credit-card text-green-500 mr-3"></i>
+                <span>Payment Options</span>
+            </h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex items-center space-x-3 p-4 bg-green-50 rounded-lg">
+                    <i class="fas fa-mobile-alt text-green-500 flex-shrink-0"></i>
+                    <span class="text-gray-700">UPI/Digital Payments</span>
+                </div>
+                <div class="flex items-center space-x-3 p-4 bg-green-50 rounded-lg">
+                    <i class="fas fa-university text-green-500 flex-shrink-0"></i>
+                    <span class="text-gray-700">Bank Transfer</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Call to Action Footer -->
+    <footer class="gradient-bg text-white py-8 md:py-12">
+        <div class="container mx-auto px-4 text-center">
+            <i class="fas fa-heartbeat text-4xl mb-4 opacity-75"></i>
+            <h3 class="text-xl md:text-2xl font-bold mb-4">Start Your Transformation Today</h3>
+            <p class="text-lg mb-6 opacity-90">"Your health is an investment, not an expense. Let's build a healthier you together!"</p>
+            
+            <!-- Mobile-optimized contact buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+                <a href="tel:+918810646986" class="btn-touch bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold rounded-lg transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i>Call Now
+                </a>
+                <a href="https://wa.me/918810646986" class="btn-touch bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition duration-300 inline-flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                </a>
+            </div>
+            
+            <div class="mt-6 pt-6 border-t border-white border-opacity-20">
+                <p class="text-sm opacity-75">© 2024 Shivani Arora - Certified Dietitian & Health Coach</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
